@@ -10,10 +10,10 @@ Basicly a number guess app, a random number 0 until 100 and you have 5 right for
 <table align="center">
 <tr>
  <td>
-  <p align="center"><b>Error State Screen</b></p>
+  <p align="center"><b>Dark Mode</b></p>
  </td>
  <td>
-  <p align="center"><b>Success State Screen</b></p>
+  <p align="center"><b>Light Mode</b></p>
  </td>
 </tr>
 <tr>
