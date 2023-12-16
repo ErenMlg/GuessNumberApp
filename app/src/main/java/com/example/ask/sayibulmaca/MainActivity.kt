@@ -10,9 +10,9 @@ import com.example.ask.sayibulmaca.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainDesign:ActivityMainBinding
-    var guessValue=0
-    var right = 5;
-    var randomInt = (0..100).random()
+    private var guessValue=0
+    private var right = 5;
+    private var randomInt = (0..100).random()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         mainDesign.tahminBtn.setOnClickListener {
             guessValue = mainDesign.sayiGirisi.text.toString().toInt()
-            if((right-1)!=0){
+            if(right!=0){
                 if(randomInt>guessValue){
                     mainDesign.kontrolText.text="Arttır"
                     mainDesign.kontrolText.setTextColor(ContextCompat.getColor(this,R.color.upColor))
